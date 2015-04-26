@@ -2,13 +2,17 @@
 #include "SFML\Window.hpp"
 #include "SFML\Graphics.hpp"
 #include "Level.h"
+<<<<<<< HEAD
 #include "Player.h"
 #include "Map.h"
+=======
+>>>>>>> 480615b6005829082638e2fd72001e19a203450a
 
 class Game
 {
 public:
 	static void Start();
+<<<<<<< HEAD
 //static char ch;
 	 static sf::Keyboard::Key  GetInput(sf::Keyboard::Key key);
 private:
@@ -16,6 +20,10 @@ private:
 	 static Level level;
 	 Player *P;
 	 Map * map;
+=======
+private:
+	 Level * level;
+>>>>>>> 480615b6005829082638e2fd72001e19a203450a
 	static bool IsExiting();
 	static void GameLoop();
 	

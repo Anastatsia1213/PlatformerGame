@@ -9,7 +9,10 @@ public:
 	bool alive, onGround;
 	float speed;
 	Player(float X, float Y, int W, int H, sf::String Name);
+<<<<<<< HEAD
 
+=======
+>>>>>>> 480615b6005829082638e2fd72001e19a203450a
 	~Player(void);
 	void Update(float elapsedTime);
 	void Draw(sf::RenderWindow& window_);

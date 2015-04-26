@@ -5,6 +5,13 @@
 
 Map::Map()
 {
+<<<<<<< HEAD
+=======
+	
+}
+void Map:: Load_()
+{
+>>>>>>> 480615b6005829082638e2fd72001e19a203450a
 	map_image.loadFromFile("block.png");//загружаем файл для карты
 	map.loadFromImage(map_image);
 	s_map.setTexture(map);
@@ -35,10 +42,13 @@ Map::Map()
 	//TileMap[23] = "0                                      0";
 	/*TileMap[23] = "0                                      0";
 	TileMap[24] = "0000000000000000000000000000000000000000";*/
+<<<<<<< HEAD
 }
 void Map:: Load_()
 {
 	
+=======
+>>>>>>> 480615b6005829082638e2fd72001e19a203450a
 
 }
 
