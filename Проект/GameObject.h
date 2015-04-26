@@ -13,8 +13,13 @@ public:
 	 ~GameObject();
 	
 	 void Load(std::string filename);
+<<<<<<< HEAD
+	virtual void Draw(sf::RenderWindow &window);
+	 virtual void Update(float elapsedTime);
+=======
 	 void Draw(sf::RenderWindow &window);
 	 void Update(float elapsedTime);
+>>>>>>> 480615b6005829082638e2fd72001e19a203450a
 
 	 void SetPosition(float x, float y);
 	//virtual sf::Vector2f GetPosition() const;
