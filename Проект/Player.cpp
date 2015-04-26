@@ -1,17 +1,11 @@
 #include "stdafx.h"
 #include "Player.h"
-<<<<<<< HEAD
 #include "Game.h"
-=======
->>>>>>> 480615b6005829082638e2fd72001e19a203450a
 
 
 Player::Player(float X, float Y, int W, int H, sf::String Name):GameObject(X, Y, W, H, Name)
 {
-<<<<<<< HEAD
 	Load("Boy1.png");
-=======
->>>>>>> 480615b6005829082638e2fd72001e19a203450a
 	state = stay;
 	playerScore = 0;
 	speed = 0;
@@ -24,7 +18,6 @@ Player::Player(float X, float Y, int W, int H, sf::String Name):GameObject(X, Y,
 			}
 }
 
-<<<<<<< HEAD
 
  void Player::
 	 Control(){
@@ -45,21 +38,6 @@ Player::Player(float X, float Y, int W, int H, sf::String Name):GameObject(X, Y,
 				   state = jump; dy = -0.6; onGround = false;
 			   }
 		//   }
-=======
- void Player::Control(){
-		   if (sf::Keyboard::isKeyPressed){//если нажата клавиша
-			   if (sf::Keyboard::isKeyPressed(sf::Keyboard::A)) {//а именно левая
-				   state = left; speed = 0.1;
-			   }
-			   if (sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {
-				   state = right; speed = 0.1;
-			   }
-
-			   if ((sf::Keyboard::isKeyPressed(sf::Keyboard::Space)) && (onGround)) {
-				   state = jump; dy = -0.6; onGround = false;
-			   }
-		   }
->>>>>>> 480615b6005829082638e2fd72001e19a203450a
  }
 
 Player::~Player(void)

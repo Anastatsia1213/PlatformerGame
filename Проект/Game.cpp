@@ -29,15 +29,12 @@ bool Game::IsExiting()
 	else 
 		return false;
 }
-<<<<<<< HEAD
 sf::Keyboard::Key  Game::GetInput(sf::Keyboard::Key key )//, bool isPressed)
 {//ch = getch();
 	 //return(_mainWindow.pollEvent(event));
 	//if(key == sf::Keyboard::D)
 	return(key);
 }
-=======
->>>>>>> 480615b6005829082638e2fd72001e19a203450a
 
 void Game::GameLoop()
 {
@@ -55,7 +52,6 @@ void Game::GameLoop()
 			}
 		case Game::Playing:
 			{
-<<<<<<< HEAD
 				sf::Clock clock;				 
 				float time = clock.getElapsedTime().asMicroseconds();
 				Player *P= new Player(0, 0, 140, 178, "Player1");
@@ -73,16 +69,6 @@ void Game::GameLoop()
 						GetInput(currentEvent.key.code);
 						level.UpdateAll();
 						level.DrawAll(_mainWindow);
-=======
-
-				Level *level = new Level();
-				sf::Event currentEvent;
-				while(_mainWindow.pollEvent(currentEvent))
-					{
-						_mainWindow.clear(sf::Color::White);
-						level->Draw(_mainWindow);
-						//level->UpdateAll();
->>>>>>> 480615b6005829082638e2fd72001e19a203450a
 						_mainWindow.display();
 				
 						if(currentEvent.type == sf::Event::Closed) 
@@ -121,10 +107,6 @@ void Game::ShowMenu()
 	}
 }
 Game::GameState Game::_gameState = Uninitialized;// статические элементы инициализируем вне класса
-<<<<<<< HEAD
 sf::RenderWindow Game::_mainWindow;
 //char Game::ch;
 	Level Game::level;
-=======
-sf::RenderWindow Game::_mainWindow;
->>>>>>> 480615b6005829082638e2fd72001e19a203450a
